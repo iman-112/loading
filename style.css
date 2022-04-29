@@ -2,6 +2,7 @@ body{
     background-color: #090221;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -11,7 +12,7 @@ body{
     grid-template-rows: repeat(3,20px);
     transform: rotate(45deg);
 }
-.container span{
+ span{
     display: block;
     background-color: #fff;
     animation: loading-effect 1s ease infinite;
@@ -49,13 +50,25 @@ span:nth-child(7){
 @keyframes loading-effect{
     0%{
         transform: scale(0);
+        background-color: rgb(24, 209, 0);
+
     }
     100%{
         transform: scale(1);
+        
     }
 }
 
-
+.text{
+    padding: 2rem;
+    display: flex;
+}
+.text span{
+    font-size: 2rem;
+    color: #090221;
+    border-radius: 25%;
+    margin-right: 10px;
+}
 
 
 
